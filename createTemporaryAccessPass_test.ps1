@@ -91,7 +91,7 @@ $response = Invoke-WebRequest -UseBasicParsing -Uri $reqUri_Get -Method Get -Hea
 
 $tapJsonValue = ($response.Content | ConvertFrom-Json).value
 
-if (!$tapJsonValue){
+if ($null -eq $tapJsonValue){
     Write-Host "tapJsonValue is null."
     Write-Host "create Temporary Access Pass"
     $body = '{
@@ -101,7 +101,7 @@ if (!$tapJsonValue){
       }'
     $response = Invoke-RestMethod -Uri $reqUri_Create -Method Post -Body $body -Headers $headers -ContentType "application/json" -Verbose
     $response | fl
-} elseif ($tapJsonValue) {
+} elseif ($null -ne $tapJsonValue) {
     Write-Host "tapJsonValue is NOT null"
     Write-Host "STOP creating Temporary Access Pass"
 }
