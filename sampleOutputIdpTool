@@ -1,0 +1,41 @@
+PS XXXX> XXXX.ps1
+
+Input UPN : lebron.james@contosojp0122.onmicrosoft.com
+5ce58954-767e-4f8a-9d53-35d6c865c4e1
+
+
+@odata.context          : https://graph.microsoft.com/v1.0/$metadata#identityProtection/riskyUsers/$entity
+id                      : 5ce58954-767e-4f8a-9d53-35d6c865c4e1
+isDeleted               : False
+isProcessing            : True
+riskLevel               : high
+riskState               : confirmedCompromised
+riskDetail              : adminConfirmedSigninCompromised
+riskLastUpdatedDateTime : 2022-01-26T15:00:18.9297972Z
+userDisplayName         : Lebron James
+userPrincipalName       : lebron.james@contosojp0122.onmicrosoft.com
+
+risk level is high.
+Key   : userIds
+Value : {5ce58954-767e-4f8a-9d53-35d6c865c4e1}
+Name  : userIds                                                                                                                                                                                                                                                                                     VERBOSE: POST with -1-byte payload                                                                                                                VERBOSE: received -1-byte response of content type                                                                                                                                                                                                                                                                                       
+
+PS XXXX> XXXX.ps1
+
+Input UPN : lebron.james@contosojp0122.onmicrosoft.com
+5ce58954-767e-4f8a-9d53-35d6c865c4e1
+
+
+@odata.context          : https://graph.microsoft.com/v1.0/$metadata#identityProtection/riskyUsers/$entity
+id                      : 5ce58954-767e-4f8a-9d53-35d6c865c4e1
+isDeleted               : False
+isProcessing            : False
+riskLevel               : none
+riskState               : dismissed
+riskDetail              : adminDismissedAllRiskForUser
+riskLastUpdatedDateTime : 2022-01-26T23:09:08.7758913Z
+userDisplayName         : Lebron James
+userPrincipalName       : lebron.james@contosojp0122.onmicrosoft.com
+
+risk is not high.
+
